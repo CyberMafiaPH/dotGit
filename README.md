@@ -2,4 +2,5 @@
 # Installation steps
 
 chmod +x installer.sh
+
 ./installer.sh
